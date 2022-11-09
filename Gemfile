@@ -11,6 +11,7 @@ gem "importmap-rails"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.4"
 gem "redis", "~> 4.0"
+gem "sassc-rails"
 gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 gem "stimulus-rails"
@@ -30,11 +31,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 
 
-# Reduces boot times through caching; required in config/boot.rb
-
-
-# Use Sass to process CSS
-# gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

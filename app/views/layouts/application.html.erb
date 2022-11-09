@@ -13,7 +13,9 @@
     <%= favicon_link_tag asset_path("airbnbfavicon.ico") %>
   </head>
   <body>
+    <%=  render "layouts/header"%>
     <main class="container mx-auto mt-28 px-5 flex">
+  
       <%= yield %>
     </main>
   </body>
