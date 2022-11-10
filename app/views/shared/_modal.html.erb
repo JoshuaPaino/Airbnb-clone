@@ -48,26 +48,40 @@ class="hidden relative z-10" aria-labelledby="modal-title" role="dialog" aria-mo
       >
         <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div class="sm:flex sm:items-start">
-            <div class="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-              <!-- Heroicon name: outline/exclamation-triangle -->
-              <svg class="h-6 w-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5v3.75m-9.303 3.376C1.83 19.126 2.914 21 4.645 21h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 4.88c-.866-1.501-3.032-1.501-3.898 0L2.697 17.626zM12 17.25h.007v.008H12v-.008z" />
-              </svg>
-            </div>
+          <%# Header close button %>
+          <div class="flex-none cursor-pointer" data-modal-target="closeButton">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+          <div class="grow">
+                <h3 class="text-lg pr-6 font-medium leading-6 text-gray-900 sm:text-center sm:text-sm" id="modal-title">Log in or sign up</h3>
+          </div>
+          </div>
+        
             <div class="mt-3 text-center w-full  sm:mt-0 sm:text-left">
-              <h3 class="text-lg font-medium leading-6 text-gray-900 sm:text-center sm:text-sm" id="modal-title">Log in or sign up</h3>
-              <hr>
-              <h3 class="text-lg font-medium leading-6 text-gray-900 sm:text-left sm:text-lg"> Welcome to Airbnb</h3>
-              <div class="mt-2">
+            
+          
+              <hr class="mt-3 mb-6">
+              <h3 class="text-lg font-medium leading-6 text-gray-900 sm:text-center sm:text-lg"> Welcome to Airbnb</h3>
+                   <div>
+ 
+  <div class="bg-gray-50 px-4 py-3 sm:px-6">
+  <label for="email" class="block text-sm font-medium text-gray-700 text-left">Email</label>
+    <input type="text" name="email" id="email" class="block w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="test@email.com">
+<div class="mt-2">
                 <p class="text-xs text-gray-500">We’ll call or text you to confirm your number. Standard message and data rates apply. <a href="#" class="underline"> Privacy Policy</a></p>
               </div>
             </div>
           </div>
+  </div>
+    
+              
+              
        
         </div>
         <div class="bg-gray-50 px-4 py-3 sm:px-6">
-          <button type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3  sm:text-sm">Continue</button>
-         
+          <button type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2  sm:text-sm">Continue</button>  
         </div>
 
             <div class="inline-flex justify-center items-center w-full">
@@ -77,19 +91,19 @@ class="hidden relative z-10" aria-labelledby="modal-title" role="dialog" aria-mo
 
         <%# Auth Buttons %>
         <div class="bg-gray-50 px-4 py-2 sm:px-6">
-          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black sm:ml-3  sm:text-sm">Continue with Facebook</button>
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-sm">Continue with Facebook</button>
         </div>
         <%# Google %>
          <div class="bg-gray-50 px-4 py-2 sm:px-6">
-          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black sm:ml-3  sm:text-sm">Continue with Google</button>
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black  sm:text-sm">Continue with Google</button>
         </div>
         <%# Apple %>
          <div class="bg-gray-50 px-4 py-2 sm:px-6">
-          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black sm:ml-3  sm:text-sm">Continue with Apple</button>
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black  sm:text-sm">Continue with Apple</button>
         </div>
         <%# email %>
          <div class="bg-gray-50 px-4 mb-2 py-2 sm:px-6">
-          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black sm:ml-3  sm:text-sm">Continue with email</button>
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black   sm:text-sm">Continue with email</button>
         </div>
 
 
