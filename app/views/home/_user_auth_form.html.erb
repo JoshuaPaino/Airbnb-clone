@@ -1,0 +1,78 @@
+
+<div data-controller="users-by-email-auth">
+<div  class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div class="sm:flex sm:items-start">
+          <%# Header close button %>
+          <div class="flex-none cursor-pointer" data-modal-target="closeButton">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+          <div class="grow">
+                <h3 class="text-lg sm:pr-6 font-medium leading-6 text-gray-900 sm:text-center sm:text-sm text-center" id="modal-title">Log in or sign up</h3>
+          </div>
+          </div>
+        
+            <div class="mt-3 text-center w-full  sm:mt-0 sm:text-left">
+            
+          
+              <hr class="mt-3 mb-6">
+              <h3 class="text-lg font-medium leading-6 text-gray-900 sm:text-center sm:text-lg "> Welcome to Airbnb</h3>
+                   <div>
+ 
+  <div class=" py-3 ">
+
+    <label for="email" class="block text-sm font-medium px-3 text-gray-700 text-left">Email</label>
+  
+    <input data-users-by-email-auth-target="email" type="text" name="email" id="email" class="block w-full rounded-md border-gray-300 pl-3 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="test@email.com">
+<div class="mt-2">
+                <p class="text-xs text-gray-500 px-3">We’ll call or text you to confirm your number. Standard message and data rates apply. <a href="#" class="underline"> Privacy Policy</a></p>
+              </div>
+            </div>
+          </div>
+  </div>
+    
+              
+              
+       
+        </div>
+    
+         <div class="bg-gray-50 px-4 py-2 sm:px-6">
+          <button  data-users-by-email-auth-target="submit" type="button" class="inline-flex w-full justify-center rounded-md border-transparent bg-red-600  px-4 py-4 text-base font-medium text-white shadow-sm  hover:bg-red-700  focus:outline-none border-transparent hover:bg-red-700 focus:ring-red-500 focus:ring-2 focus:ring-offset-2 k sm:text-sm">Continue with Facebook</button>
+        </div>
+
+
+
+
+
+
+            <div class="inline-flex justify-center items-center w-full">
+                <hr class="my-4 w-64 h-px bg-gray-200 border-0 dark:bg-gray-300">
+                <span class="absolute left-1/2 px-3 font-medium text-gray-900 bg-white sm:text-xs -translate-x-1/2  ">or</span>
+            </div>
+
+        <%# Auth Buttons %>
+        <div class="bg-gray-50 px-4 py-2 sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black sm:text-sm">Continue with Facebook</button>
+        </div>
+        <%# Google %>
+         <div class="bg-gray-50 px-4 py-2 sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black  sm:text-sm">Continue with Google</button>
+        </div>
+        <%# Apple %>
+         <div class="bg-gray-50 px-4 py-2 sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black  sm:text-sm">Continue with Apple</button>
+        </div>
+        <%# email %>
+         <div class="bg-gray-50 px-4 mb-2 py-2 sm:px-6">
+          <button type="button" class="inline-flex w-full justify-center rounded-md border  px-4 py-4 text-base font-medium shadow-sm hover:bg-gray-100 border-1 border-black focus:outline-none focus:ring-2 focus:ring-black   sm:text-sm">Continue with email</button>
+        </div>
+
+
+         
+
+        
+        
+
+            
+</div>
